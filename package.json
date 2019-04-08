@@ -1,0 +1,30 @@
+{
+    "name": "webhook-denysabck",
+    "version": "0.0.1",
+    "description": "A Validating Admission Webhook to deny all creating object requests using the Service Account pvc-backup-deployer except for backup pods creation.",
+    "main": "server.js",
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "express": "^4.14.0",
+      "fs": "0.0.1-security",
+      "https": "^1.0.0",
+      "morgan": "^1.8.2"
+    },
+    "engine": {
+      "node": "*",
+      "npm": "*"
+    },
+    "scripts": {
+      "start": "node --use_strict app.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/josgonza-rh/webhook-denysabck.git"
+    },
+    "author": "Jose Antonio Gonzalez Prada <josgonza@redhat.com>",
+    "license": "GPL-3.0+",
+    "bugs": {
+      "url": "https://github.com/josgonza-rh/webhook-denysabck/issues"
+    },
+    "homepage": "https://github.com/josgonza-rh/webhook-denysabck"
+  }
